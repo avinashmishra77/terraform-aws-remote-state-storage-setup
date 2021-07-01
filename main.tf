@@ -4,6 +4,7 @@
 # Provider
 provider "aws" {
   region = "us-east-1"
+  profile = "terraform"
 
   default_tags {
     tags = {
