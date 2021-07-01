@@ -12,7 +12,7 @@ terraform{
     key = "<insert-s3-key-used-to-store-state>"
     region = "us-east-1"
 
-    dynamodb_table = '<insert-dynamodb-table>'
+    dynamodb_table = "<insert-dynamodb-tf-state-table>"
     encrypt = true
   }
 }
