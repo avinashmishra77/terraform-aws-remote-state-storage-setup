@@ -4,12 +4,11 @@
 # Provider
 provider "aws" {
   region  = var.region
-  profile = "terraform"
+  profile = var.aws_profile
 
   default_tags {
     tags = {
-      CreatedBy = "terraform",
-      UpdatedOn = timestamp()
+      CreatedBy = "terraform"      
     }
   }
 }
